@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "test-resources"
+version = "0.1.0"
+description = ""
+authors = ["markklimenko <mark.klimenko.w@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "*"
+requests_toolbelt = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

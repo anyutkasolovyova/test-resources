@@ -1,5 +1,5 @@
 curl --location --request PUT 'https://dev-ibank.bocbs.cardpay-test.com/api/crud/outbox' \
---header 'Authorization: Bearer токен \
+--header 'Authorization: Bearer {jwtToken} \
 --form 'data="{\"managerId\":\"CSO\",\"messageTitle\":\"test2\",\"messageBody\":\"test message1\",\"companyCif\":\"006609\",\"messageDirection\":\"OUT\",\"managerLogin\":\"s.stepanov\"}"'
 
 
