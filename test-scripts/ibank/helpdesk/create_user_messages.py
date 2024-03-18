@@ -4,7 +4,7 @@ import json
 from requests_toolbelt.multipart.encoder import MultipartEncoder
 from random import randint
 
-from ibank.settings import url, jwtToken
+from ibank.settings import ibank_url, ibank_jwt_token
 
 
 def create_message():
@@ -27,11 +27,11 @@ def create_message():
     )
 
     response = requests.put(
-        url,
+        url=ibank_url,
         data=mp_encoder,
         headers={
             'Content-Type': mp_encoder.content_type,
-            'Authorization': 'Bearer {}'.format(jwtToken),
+            'Authorization': 'Bearer {}'.format(ibank_jwt_token),
 
         }
     )
