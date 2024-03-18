@@ -6,7 +6,7 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 Add the next line to the file `~/.zshrc`
-```text
+```
 export PATH=/opt/homebrew/bin:$PATH
 ```
 
@@ -19,7 +19,9 @@ brew install pyenv
 
 ### Install python 
 ```shell
-pyenv install 3.11.0
+pyenv install {version}
+
+pyenv global 3.11.0
 pyenv global 3.12.0
 ```
 Add the next line to the file `~/.zshrc`
