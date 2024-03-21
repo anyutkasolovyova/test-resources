@@ -44,5 +44,5 @@ def create_message():
     print(response.content)
 
 
-for i in range(5):
+for i in range(1000):
     create_message()
