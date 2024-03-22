@@ -4,7 +4,7 @@ import requests
 from ibank.settings import ibank_auth_url
 
 
-class AuthClient:
+class IbankAuthClient:
     def get_access_token(self, login) -> str:
         request_body = {
             "method": "FUTURAE",
