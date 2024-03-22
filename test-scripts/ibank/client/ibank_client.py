@@ -11,16 +11,7 @@ class IBankClient:
     def __init__(self, jwt_token):
         self.jwt_token = jwt_token
 
-    def create_helpdesk_message(self):
-        request_body = {
-            "managerId": "CSO",
-            "messageTitle": "test_1236_{}".format(randint(1, 9999)),
-            "messageBody": "test message1",
-            "companyCif": "006609",
-            "messageDirection": "OUT",
-            "managerLogin": "s.stepanov"
-        }
-
+    def create_helpdesk_message_with_body(self, request_body):
         mp_encoder = MultipartEncoder(
             fields={
                 'data': json.dumps(request_body),
@@ -41,3 +32,15 @@ class IBankClient:
 
         print(response)
         print(response.content)
+
+    def create_helpdesk_message(self):
+        request_body = {
+            "managerId": "CSO",
+            "messageTitle": "test_1236_{}".format(randint(1, 9999)),
+            "messageBody": "test message1",
+            "companyCif": "006609",
+            "messageDirection": "OUT",
+            "managerLogin": "s.stepanov"
+        }
+
+        self.create_helpdesk_message_with_body(request_body)
