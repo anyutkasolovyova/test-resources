@@ -1,0 +1,41 @@
+{
+	"responseHeader": {
+		"status": 0,
+		"QTime": 0,
+		"params": {
+			"q": "*:* AND level:1 AND messageDirection:IN AND login:fronttest AND NOT managerId:APP_SUPPORT",
+			"fl": "",
+			"start": "0",
+			"sort": "createdAt DESC",
+			"rows": "100"
+		}
+	},
+	"response": {
+		"numFound": 1037,
+		"start": 0,
+		"docs": [{
+			"messageId": "1a2295a9-f4f8-4438-8e6a-28b830519f0c",
+			"type": "inbox",
+			"state": "complete",
+			"cbsId": 70338448,
+			"rootParent": 70338448,
+			"path": "<-70338448",
+			"level": 1,
+			"messageTitle": "test_test_8278",
+			"messageBody": "test message 1",
+			"messageDirection": "IN",
+			"messageType": 0,
+			"messageStatus": 1,
+			"createdAt": 1711042359000,
+			"lastMessageDate": 1711042737000,
+			"managerId": "CSO",
+			"managerLogin": "cbs-manager",
+			"login": "fronttest",
+			"threadId": 70338448,
+			"companyCif": "006609",
+			"userThreadRead": 1,
+			"lastMessageContent": "test_1",
+			"_version_": 1794158364745269248
+		}]
+	}
+}
