@@ -1,7 +1,7 @@
 from ibank.client.ibank_auth_client import IbankAuthClient
 from ibank.client.ibank_client import IBankClient
 
-if __name__ == '__main__':
+def create_user_message():
     token = IbankAuthClient().get_access_token(login="fronttest")
     ibank_client = IBankClient(token)
 

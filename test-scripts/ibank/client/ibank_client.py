@@ -30,8 +30,7 @@ class IBankClient:
             }
         )
 
-        print(response)
-        print(response.content)
+        return response
 
     def create_helpdesk_message(self):
         request_body = {
